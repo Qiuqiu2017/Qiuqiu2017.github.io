@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qiuqiu2017 · 软件导航</title>
+<meta name="description" content="Qiuqiu2017 的开源软件导航站。">
+<style>
+  :root{
+    --bg:#0f1115; --surface:#171a21; --surface2:#1e2230; --border:#2a2f3a;
+    --text:#e8eaf0; --dim:#9aa2b1; --accent:#3ddc84;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:Inter,"Noto Sans CJK SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:900px;margin:0 auto;padding:0 24px}
+  header{padding:64px 0 32px;text-align:center}
+  header h1{font-size:34px;margin:0 0 8px;font-weight:800}
+  header p{color:var(--dim);margin:0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;padding:24px 0 64px}
+  .card{display:block;background:var(--surface);border:1px solid var(--border);
+    border-radius:16px;padding:22px;color:var(--text);transition:border-color .15s}
+  .card:hover{border-color:var(--accent);text-decoration:none}
+  .card h3{margin:0 0 8px;font-size:18px;display:flex;align-items:center;gap:10px}
+  .card p{margin:0;color:var(--dim);font-size:14px}
+  .tag{font-size:12px;font-weight:700;color:var(--accent);
+    background:rgba(61,220,132,.15);border-radius:8px;padding:2px 8px}
+  footer{padding:40px 0;color:var(--dim);font-size:13px;text-align:center;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Qiuqiu2017 · 软件导航</h1>
+    <p>开源软件合集</p>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="/droiddeck/">
+      <h3>DroidDeck <span class="tag">Linux</span></h3>
+      <p>在 Linux 上像原生安卓一样安装并运行 Android 应用（APK），
+         基于 Waydroid 容器，支持可选 Root 环境、防格机保护与宿主机隔离。</p>
+    </a>
+    <!-- 后续新软件在这里加卡片 -->
+  </div>
+
+  <footer>
+    © 2026 Qiuqiu2017 · <a href="https://github.com/Qiuqiu2017">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>
